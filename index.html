@@ -3,8 +3,37 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+
+	<script>
+		document.addEventListener('DOMContentLoaded',function(){
+
+			console.log("Dom Cargado");
+
+					var enlace=document.querySelector("#enlace");
+
+		enlace.addEventListener("click",function(event){
+
+console.log("click");
+event.preventDefault();
+		});
+
+
+
+
+
+		});
+
+
+	</script>
+	<!--<script src="https://code.jquery.com/jquery-git.js"></script>-->
+
 </head>
 <body>
-	
+
+	<a id="enlace" href="https://www.google.cl">Esto es un enlace</a>
+
+	<h1 id="elementoJS">Elemento JS</h1>
+	<h1 id="elementoJQ">Elemento JQ</h1>
+	<!--<script src="script.js"></script>-->
 </body>
 </html>
