@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Video 4</title>
+
+<style>
+	.rojo{
+		color:indianred;
+	}
+	.azul{
+		color:dodgerblue;
+	}
+</style>
+
+</head>
+
+
+<body>
+	
+<h1 class="azul">Hola desde DO Podcast</h1>
+
+
+
+<button>Cambio de color</button>
+
+</body>
+
+
+<script>
+
+	var h1=document.querySelector("h1");
+
+	var button=document.querySelector("button");
+
+	console.log(h1.classList);
+
+	button.addEventListener("click",function(){
+
+if(h1.classList.contains("rojo"))
+	{
+	h1.classList.remove("rojo");
+	h1.classList.add("azul");
+	}
+	
+else if(h1.classList.contains("azul"))
+	{
+	h1.classList.remove("azul");
+	h1.classList.add("rojo");
+	}
+
+
+	});
+
+
+</script>
+
+
+</html>
